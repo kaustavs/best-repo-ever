@@ -68,5 +68,10 @@ Changes to be committed:
         new file:   Git Commands.txt
         modified:   README.md
 
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git commit -m "My first commit"
+[myfeaturebranch a471676] My first commit
+ 2 files changed, 75 insertions(+), 1 deletion(-)
+ create mode 100644 Git Commands.txt
+
 
 
