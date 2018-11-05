@@ -29,6 +29,11 @@ D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
 On branch myfeaturebranch
 nothing to commit, working tree clean
 
+Client : Branch --> CheckOut  --> Add (Stage) --> Commit --> Push 
+Server : Pull Request (code review) --> Merge pull request --> Delete branch
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
 On branch myfeaturebranch
 Changes not staged for commit:
@@ -72,6 +77,27 @@ D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git commit -m "My first commit
 [myfeaturebranch a471676] My first commit
  2 files changed, 75 insertions(+), 1 deletion(-)
  create mode 100644 Git Commands.txt
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
+On branch myfeaturebranch
+nothing to commit, working tree clean
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git push -u origin myfeaturebranch
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.21 KiB | 311.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'myfeaturebranch' on GitHub by visiting:
+remote:      https://github.com/kaustavs/best-repo-ever/pull/new/myfeaturebranch
+
+remote:
+To https://github.com/kaustavs/best-repo-ever.git
+ * [new branch]      myfeaturebranch -> myfeaturebranch
+Branch 'myfeaturebranch' set up to track remote branch 'myfeaturebranch' from 'origin'.
 
 
 
