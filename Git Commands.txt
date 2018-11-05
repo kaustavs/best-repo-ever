@@ -1,0 +1,72 @@
+D:\OneDrive - Capgemini\Salesforce>git clone https://github.com/kaustavs/best-repo-ever.git
+Cloning into 'best-repo-ever'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+D:\OneDrive - Capgemini\Salesforce>git config --global user.name "Kaustav S"
+
+D:\OneDrive - Capgemini\Salesforce>git config --global user.email "kaustav.sarkar@capgemini.com"
+
+D:\OneDrive - Capgemini\Salesforce>git config --global core.autocrlf true
+
+D:\OneDrive - Capgemini\Salesforce>cd best-repo-ever
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git branch
+* master
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git branch myfeaturebranch
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git branch
+* master
+  myfeaturebranch
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git checkout myfeaturebranch
+Switched to branch 'myfeaturebranch'
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
+On branch myfeaturebranch
+nothing to commit, working tree clean
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
+On branch myfeaturebranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Git Commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git add README.md
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
+On branch myfeaturebranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Git Commands.txt
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git add "Git Commands.txt"
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
+On branch myfeaturebranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Git Commands.txt
+        modified:   README.md
+
+
+
