@@ -1,6 +1,6 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Setup local
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 D:\OneDrive - Capgemini\Salesforce>git clone https://github.com/kaustavs/best-repo-ever.git
 Cloning into 'best-repo-ever'...
 remote: Enumerating objects: 3, done.
@@ -32,15 +32,15 @@ D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
 On branch myfeaturebranch
 nothing to commit, working tree clean
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Client : Branch --> CheckOut  --> Add (Stage) --> Commit --> Push 
 Server : Pull Request (code review) --> Merge pull request --> Delete branch
 Client :  CheckOut  master --> git pull (= fetch + merge)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Merge
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git status
 On branch myfeaturebranch
 Changes not staged for commit:
@@ -128,13 +128,12 @@ Fast-forward
  2 files changed, 106 insertions(+), 1 deletion(-)
  create mode 100644 Git Commands.txt
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Client : CheckOut  (conflict branch) --> Pull  --> Merge origin/master --> Push 
+Client : CheckOut  (conflict branch) --> Pull  --> Merge origin/master --> (resolve the code conflict) --> Add --> Commit --> Push 
 Server : Pull Request (code review) --> Merge pull request --> Delete branch
 Client :  CheckOut  master --> git pull (= fetch + merge)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Merge conflicts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -172,4 +171,45 @@ Unmerged paths:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git add README.md
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git commit -i -m "Commit to re
+solve merge conflict"
+[new-branch-2 9ecf001] "Commit
+
+D:\OneDrive - Capgemini\Salesforce\best-repo-ever>git push
+Enumerating objects: 10, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.07 KiB | 1.07 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kaustavs/best-repo-ever.git
+   a4578aa..9ecf001  new-branch-2 -> new-branch-2
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Atomic Commits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git add -p
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compare between any two commits, branches, or tags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git diff
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+View previous changes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git show <SHA-1>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Undoing Changes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git revert
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Turn a Recursive Merge into a Fast-Forward Merge 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git rebase
 
